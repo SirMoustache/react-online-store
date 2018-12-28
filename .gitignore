@@ -1,0 +1,12 @@
+.DS_Store
+
+## Directories
+log/
+dist/
+build/
+node_modules/
+bower_components/
+.next
+
+## Files
+npm-debug.log

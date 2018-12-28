@@ -1,0 +1,32 @@
+{
+  "name": "react-online-store",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SirMoustache/react-online-store.git"
+  },
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "SirMoustache",
+  "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "next": "^7.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.1.3"
+  }
+}
