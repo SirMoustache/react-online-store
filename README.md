@@ -1,4 +1,5 @@
 # React Online Store Boilerplate
+![travis-ci badge](https://travis-ci.com/SirMoustache/react-online-store.svg?branch=master)
 
 ## How to run
 ```bash
