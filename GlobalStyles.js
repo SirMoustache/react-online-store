@@ -28,6 +28,12 @@ const GlobalStyles = createGlobalStyle`
     color: ${theme.colors.typography.main};
     font-size: 16px;
   }
+
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 `;
 
 export default GlobalStyles;
