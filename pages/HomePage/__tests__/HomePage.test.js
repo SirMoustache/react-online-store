@@ -10,8 +10,8 @@ import { shallow } from 'enzyme';
 import HomePage from '..';
 
 describe('<HomePage />', () => {
-  it('should render correctly', () => {
-    const renderedComponent = shallow(<HomePage />);
-    expect(renderedComponent).toMatchSnapshot();
+  it('should match snapshot', () => {
+    const wrapper = shallow(<HomePage />);
+    expect(wrapper).toMatchSnapshot();
   });
 });

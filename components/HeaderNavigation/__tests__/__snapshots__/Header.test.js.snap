@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderNavigation /> should match snapshot 1`] = `
+<HeaderNavigation__Root>
+  <Link
+    href="/"
+  >
+    <DynamicComponent(A)>
+      Home
+    </DynamicComponent(A)>
+  </Link>
+  <Link
+    href="/about"
+  >
+    <DynamicComponent(A)>
+      About
+    </DynamicComponent(A)>
+  </Link>
+</HeaderNavigation__Root>
+`;

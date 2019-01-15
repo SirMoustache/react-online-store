@@ -1,7 +1,8 @@
 /**
  * Absolute imports
  */
-import { css } from 'styled-components';
+import { createElement } from 'react';
+import styled, { css } from 'styled-components';
 
 const sizes = {
   xl: 1920,
@@ -37,3 +38,34 @@ export const cssMedia = Object.keys(sizes).reduce((acc, label) => {
   `;
   return accumulator;
 }, {});
+
+/**
+ *
+ * @param {*} Component
+ */
+export const withDynamicComponent = Component => {
+  const bucket = Object.create(null);
+
+  const DynamicComponent = ({ component, ...rest }) => {
+    if (
+      typeof component !== 'string' ||
+      !Object.prototype.hasOwnProperty.call(styled, component)
+    ) {
+      return createElement(Component, rest);
+    }
+
+    if (bucket[component] === undefined) {
+      bucket[component] = Component.withComponent(component);
+    }
+
+    return createElement(bucket[component], rest);
+  };
+
+  const name = Component.displayName || Component.constructor.name;
+
+  if (name) {
+    DynamicComponent.displayName = `DynamicComponent(${name})`;
+  }
+
+  return DynamicComponent;
+};

@@ -2,17 +2,17 @@ module.exports = {
   collectCoverageFrom: [
     'components/**/*.{js,jsx}',
     'pages/**/*.{js,jsx}',
-    '!pages/_*.{js,jsx}',
+    '!pages/*.{js,jsx}',
     '!pages/index.{js,jsx}',
     '!**/*.test.{js,jsx}',
     '!.next/**/*.{js,jsx}',
   ],
   coverageThreshold: {
     global: {
-      statements: 98,
-      branches: 91,
-      functions: 98,
-      lines: 98,
+      statements: 90,
+      branches: 90,
+      functions: 90,
+      lines: 90,
     },
   },
   verbose: true,

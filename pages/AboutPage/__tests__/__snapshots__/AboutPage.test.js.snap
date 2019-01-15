@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HomePage /> should match snapshot 1`] = `
+exports[`<AboutPage /> should match snapshot 1`] = `
 <Fragment>
   <h1>
-    Hello World from Home Page
+    Hello World from About Page
   </h1>
 </Fragment>
 `;

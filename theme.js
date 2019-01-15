@@ -9,6 +9,10 @@ const colors = {
     light: '#fafafa',
     dark: '#161c27',
   },
+  active: {
+    main: '#00b1ea',
+    dark: '#009ed1',
+  },
 };
 
 const sizes = {

@@ -10,7 +10,7 @@ import { shallow } from 'enzyme';
 import Header from '..';
 
 describe('<Header />', () => {
-  it('should render correctly', () => {
+  it('should match snapshot', () => {
     const renderedComponent = shallow(<Header />);
     expect(renderedComponent).toMatchSnapshot();
   });

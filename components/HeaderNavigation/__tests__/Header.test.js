@@ -7,12 +7,11 @@ import { shallow } from 'enzyme';
 /**
  * Local Components
  */
-import Footer from '..';
+import HeaderNavigation from '..';
 
-describe('<Footer />', () => {
+describe('<HeaderNavigation />', () => {
   it('should match snapshot', () => {
-    const renderedComponent = shallow(<Footer />);
+    const renderedComponent = shallow(<HeaderNavigation />);
     expect(renderedComponent).toMatchSnapshot();
-    // expect(renderedComponent.find('footer').node).toBeDefined();
   });
 });

@@ -3,19 +3,25 @@
  */
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 /**
  * Global Components
  */
-import HeaderNavigation from '../HeaderNavigation';
+import A from '../A';
 
-const Root = styled.header`
+const Root = styled.div`
   flex: 0 0 auto;
 `;
 
 const Header = () => (
   <Root>
-    <HeaderNavigation />
+    <Link href="/">
+      <A>Home</A>
+    </Link>
+    <Link href="/about">
+      <A>About</A>
+    </Link>
   </Root>
 );
 
