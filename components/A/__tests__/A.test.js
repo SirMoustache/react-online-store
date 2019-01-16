@@ -31,4 +31,10 @@ describe('<A />', () => {
     const wrapper = shallow(<A href={href} />);
     expect(wrapper.prop('href')).toEqual(href);
   });
+
+  it('should render as provided component', () => {
+    const component = 'button';
+    const wrapper = shallow(<A component={component} />);
+    expect(wrapper.find(component)).toBeTruthy();
+  });
 });

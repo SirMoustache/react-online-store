@@ -10,6 +10,7 @@
     "pretest": "npm run test:clean && npm run lint",
     "test:clean": "rimraf ./coverage",
     "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "dev": "next",
     "build": "next build",
     "start": "next start",
