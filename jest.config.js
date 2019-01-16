@@ -18,6 +18,6 @@ module.exports = {
   verbose: true,
   moduleDirectories: ['node_modules', 'app'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  setupFiles: ['<rootDir>/enzyme-setup.js'],
+  setupFiles: ['<rootDir>/enzyme.setup.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
 };
