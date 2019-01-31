@@ -1,0 +1,30 @@
+/**
+ * Absolute imports
+ */
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+{{#if wantMessages}}
+import { FormattedMessage } from 'react-intl';
+{{/if}}
+
+{{#if wantMessages}}
+/**
+ * Messages
+ */
+import messages from './messages';
+{{/if}}
+
+const {{ properCase componentName }} = () => {
+  return (
+    <div>
+    {{#if wantMessages}}
+      <FormattedMessage {...messages.header} />
+    {{/if}}
+    </div>
+  );
+}
+
+{{ properCase componentName }}.propTypes = {};
+
+export default {{ properCase componentName }};

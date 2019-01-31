@@ -15,7 +15,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore . --fix"
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "generate": "plop --plopfile generators/index.js"
   },
   "author": "SirMoustache",
   "license": "MIT",
@@ -38,6 +39,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
     "jest": "^23.6.0",
+    "plop": "^2.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rimraf": "^2.6.3",

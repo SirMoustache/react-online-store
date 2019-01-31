@@ -1,0 +1,17 @@
+/**
+ * Absolute imports
+ */
+import React from 'react';
+import { shallow } from 'enzyme';
+
+/**
+ * Local Components
+ */
+import {{ properCase componentName }} from '..';
+
+describe('<{{ properCase componentName }} />', () => {
+  it('should match snapshot', () => {
+    const renderedComponent = shallow(<{{ properCase componentName }} />);
+    expect(renderedComponent).toMatchSnapshot();
+  });
+});
