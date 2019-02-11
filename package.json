@@ -40,8 +40,8 @@
     "eslint-plugin-react": "^7.12.3",
     "jest": "^23.6.0",
     "plop": "^2.2.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "rimraf": "^2.6.3",
     "styled-components": "^4.1.3"
   }
