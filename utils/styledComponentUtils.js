@@ -4,12 +4,17 @@
 import { createElement } from 'react';
 import styled, { css } from 'styled-components';
 
+/**
+ * Theme
+ */
+import { XL, LG, MD, SM, XS } from '../theme/sizes';
+
 const sizes = {
-  xl: 1920,
-  lg: 1280,
-  md: 960,
-  sm: 600,
-  xs: 376,
+  xl: XL,
+  lg: LG,
+  md: MD,
+  sm: SM,
+  xs: XS,
 };
 
 /**
@@ -25,6 +30,8 @@ const sizes = {
  * ${cssMedia.lg`background: mediumseagreen;`};
  * ${cssMedia.md`background: palevioletred;`};
  * `;
+ *
+ * @type {{xl, lg, md, sm, xs}}
  */
 export const cssMedia = Object.keys(sizes).reduce((acc, label) => {
   // use em in breakpoints to work properly cross-browser and support users
