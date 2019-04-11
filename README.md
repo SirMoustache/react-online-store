@@ -6,6 +6,8 @@
 
 ## How to run
 
+Get the [BE repo](https://github.com/SirMoustache/react-online-store-be) and run server
+
 ```bash
 git clone https://github.com/SirMoustache/react-online-store.git
 cd react-online-store
