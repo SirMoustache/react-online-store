@@ -10,17 +10,25 @@ import Link from 'next/link';
  */
 import A from '../A';
 
-const Root = styled.div`
-  flex: 0 0 auto;
+const NavLink = styled(A)`
+  display: block;
+  padding: 8px 16px;
+`;
+
+const Root = styled.nav`
+  display: flex;
 `;
 
 const Header = () => (
   <Root>
     <Link href="/">
-      <A>Home</A>
+      <NavLink>Home</NavLink>
     </Link>
     <Link href="/about">
-      <A>About</A>
+      <NavLink>About</NavLink>
+    </Link>
+    <Link href="/shop">
+      <NavLink>Shop</NavLink>
     </Link>
   </Root>
 );

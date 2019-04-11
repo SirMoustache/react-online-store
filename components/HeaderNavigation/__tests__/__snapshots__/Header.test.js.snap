@@ -5,16 +5,23 @@ exports[`<HeaderNavigation /> should match snapshot 1`] = `
   <Link
     href="/"
   >
-    <DynamicComponent(A)>
+    <HeaderNavigation__NavLink>
       Home
-    </DynamicComponent(A)>
+    </HeaderNavigation__NavLink>
   </Link>
   <Link
     href="/about"
   >
-    <DynamicComponent(A)>
+    <HeaderNavigation__NavLink>
       About
-    </DynamicComponent(A)>
+    </HeaderNavigation__NavLink>
+  </Link>
+  <Link
+    href="/shop"
+  >
+    <HeaderNavigation__NavLink>
+      Shop
+    </HeaderNavigation__NavLink>
   </Link>
 </HeaderNavigation__Root>
 `;

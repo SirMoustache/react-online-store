@@ -5,5 +5,8 @@ exports[`<HomePage /> should match snapshot 1`] = `
   <h1>
     Hello World from Home Page
   </h1>
+  <ShopItemsContainer
+    render={[Function]}
+  />
 </Fragment>
 `;
