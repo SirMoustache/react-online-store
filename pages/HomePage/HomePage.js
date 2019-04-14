@@ -8,13 +8,18 @@ import React, { Fragment } from 'react';
  */
 import ShopItemsContainer from '../../containers/ShopItems';
 
+/**
+ * Components
+ */
+import ShopItemOverview from '../../components/ShopItemOverview';
+
 const HomePage = () => (
   <Fragment>
     <h1>Hello World from Home Page</h1>
     <ShopItemsContainer
       render={data => {
         console.log('Apollo data: ', data);
-        return <span>sp</span>;
+        return <ShopItemOverview />;
       }}
     />
   </Fragment>
