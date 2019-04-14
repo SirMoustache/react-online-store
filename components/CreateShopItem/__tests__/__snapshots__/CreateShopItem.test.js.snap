@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateShopItem/> should match snapshot 1`] = `
+<div>
+  <form>
+    <h4>
+      Create Shop Item
+    </h4>
+    <input
+      name="title"
+      placeholder="Title"
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Create
+    </button>
+  </form>
+</div>
+`;

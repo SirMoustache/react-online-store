@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShopItemOverview/> should match snapshot 1`] = `
+<div>
+  <div>
+    <h3>
+      Shop Item
+    </h3>
+    Title: 
+  </div>
+</div>
+`;
