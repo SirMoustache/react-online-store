@@ -2,17 +2,25 @@
  * Absolute imports
  */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, cleanup } from 'react-testing-library';
 
 /**
  * Local Components
  */
 import Footer from '..';
 
+const renderComponent = ({ ...rest } = {}) => render(<Footer {...rest} />);
+
 describe('<Footer />', () => {
+  afterEach(cleanup);
+
   it('should match snapshot', () => {
-    const renderedComponent = shallow(<Footer />);
-    expect(renderedComponent).toMatchSnapshot();
-    // expect(renderedComponent.find('footer').node).toBeDefined();
+    const { container } = renderComponent();
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render an <footer> tag', () => {
+    const { container } = renderComponent();
+    expect(container.querySelector('footer')).not.toBeNull();
   });
 });

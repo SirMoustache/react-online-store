@@ -2,16 +2,20 @@
  * Absolute imports
  */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, cleanup } from 'react-testing-library';
 
 /**
  * Local Components
  */
 import {{ properCase componentName }} from '..';
 
+const renderComponent = ({ ...rest } = {}) => render(<{{ properCase componentName }} {...rest} />);
+
 describe('<{{ properCase componentName }} />', () => {
+  afterEach(cleanup);
+
   it('should match snapshot', () => {
-    const renderedComponent = shallow(<{{ properCase componentName }} />);
-    expect(renderedComponent).toMatchSnapshot();
+    const { container } = renderComponent();
+    expect(container).toMatchSnapshot();
   });
 });

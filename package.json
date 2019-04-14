@@ -29,9 +29,6 @@
   "devDependencies": {
     "apollo-boost": "^0.3.1",
     "babel-plugin-styled-components": "^1.10.0",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
@@ -48,6 +45,7 @@
     "react": "^16.8.1",
     "react-apollo": "^2.5.4",
     "react-dom": "^16.8.1",
+    "react-testing-library": "^6.1.2",
     "rimraf": "^2.6.3",
     "styled-components": "^4.1.3"
   }

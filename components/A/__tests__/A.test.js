@@ -2,39 +2,44 @@
  * Absolute imports
  */
 import React from 'react';
-import { shallow } from 'enzyme';
-// import { enzymeFind } from 'styled-components/test-utils';
+import { render, cleanup } from 'react-testing-library';
 
 /**
  * Local Components
  */
 import A from '..';
 
+const child = <span className="unique">Test</span>;
+
+const renderComponent = ({ ...rest } = {}) => render(<A {...rest}>{child}</A>);
+
 describe('<A />', () => {
+  afterEach(cleanup);
+
   it('should match snapshot', () => {
-    const wrapper = shallow(<A />);
-    expect(wrapper).toMatchSnapshot();
+    const { container } = renderComponent();
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render an <a> tag', () => {
+    const { container } = renderComponent();
+    expect(container.querySelector('a')).not.toBeNull();
   });
 
   it('should render children when passed in', () => {
-    const child = <span className="unique" />;
-    const wrapper = shallow(
-      <A>
-        <child />
-      </A>,
-    );
-    expect(wrapper.contains(<child />)).toEqual(true);
+    const { container } = renderComponent();
+    expect(container.querySelector('.unique')).not.toBeNull();
   });
 
   it('should adopt a valid attribute', () => {
-    const href = '/';
-    const wrapper = shallow(<A href={href} />);
-    expect(wrapper.prop('href')).toEqual(href);
+    const href = '/test';
+    const { container } = renderComponent({ href });
+    expect(container.querySelector('a').href).toContain(href);
   });
 
   it('should render as provided component', () => {
     const component = 'button';
-    const wrapper = shallow(<A component={component} />);
-    expect(wrapper.find(component)).toBeTruthy();
+    const { container } = renderComponent({ component });
+    expect(container.querySelector('button')).not.toBeNull();
   });
 });
