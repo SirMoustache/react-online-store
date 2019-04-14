@@ -1,27 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HeaderNavigation /> should match snapshot 1`] = `
-<HeaderNavigation__Root>
-  <Link
-    href="/"
+<div>
+  <nav
+    class="HeaderNavigation__Root-ixstj1-1 buTUPC"
   >
-    <HeaderNavigation__NavLink>
+    <a
+      class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+    >
       Home
-    </HeaderNavigation__NavLink>
-  </Link>
-  <Link
-    href="/about"
-  >
-    <HeaderNavigation__NavLink>
+    </a>
+    <a
+      class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+    >
       About
-    </HeaderNavigation__NavLink>
-  </Link>
-  <Link
-    href="/shop"
-  >
-    <HeaderNavigation__NavLink>
+    </a>
+    <a
+      class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+    >
       Shop
-    </HeaderNavigation__NavLink>
-  </Link>
-</HeaderNavigation__Root>
+    </a>
+  </nav>
+</div>
 `;

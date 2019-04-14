@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<A /> should match snapshot 1`] = `
+exports[`<Main /> should match snapshot 1`] = `
 <div>
-  <a
-    class="A-sc-1g6vast-0 YkdzD"
+  <main
+    class="Main-o02ej9-0 pINdQ"
   >
     <span
       class="unique"
     >
       Test
     </span>
-  </a>
+  </main>
 </div>
 `;

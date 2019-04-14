@@ -2,37 +2,48 @@
  * Absolute imports
  */
 import React from 'react';
-import { mount } from 'enzyme';
-import { enzymeFind } from 'styled-components/test-utils';
+import { render, cleanup } from 'react-testing-library';
 
 /**
  * Local Components
  */
 import Main from '..';
 
+const child = <span className="unique">Test</span>;
+
+const renderComponent = ({ ...rest } = {}) =>
+  render(<Main {...rest}>{child}</Main>);
+
 describe('<Main />', () => {
+  afterEach(cleanup);
+
+  it('should match snapshot', () => {
+    const { container } = renderComponent();
+    expect(container).toMatchSnapshot();
+  });
+
   it('should render a <main> tag', () => {
-    const container = mount(<Main />);
-    const renderedComponent = enzymeFind(container, Main);
-    expect(renderedComponent.type()).toEqual('main');
+    const { container } = renderComponent();
+    expect(container.querySelector('main')).not.toBeNull();
   });
 
   it('should have a className attribute', () => {
-    const container = mount(<Main />);
-    const renderedComponent = enzymeFind(container, Main);
-    expect(renderedComponent.prop('className')).toBeDefined();
+    const className = 'test';
+    const { container } = renderComponent({ className });
+    expect(container.querySelector('main').classList).toContain(className);
   });
 
   it('should adopt a valid attribute', () => {
     const id = 'test';
-    const container = mount(<Main id={id} />);
-    const renderedComponent = enzymeFind(container, Main);
-    expect(renderedComponent.prop('id')).toEqual(id);
+    const { container } = renderComponent({ id });
+    expect(container.querySelector('main').id).toContain(id);
   });
 
   it('should not adopt an invalid attribute', () => {
-    const container = mount(<Main attribute="test" />);
-    const renderedComponent = enzymeFind(container, Main);
-    expect(renderedComponent.prop('attribute')).toBeUndefined();
+    const attribute = 'test';
+    const { container } = renderComponent({ attribute });
+    expect(
+      container.querySelector('main').getAttribute('attribute'),
+    ).toBeNull();
   });
 });

@@ -1,7 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> should match snapshot 1`] = `
-<Header__Root>
-  <Header />
-</Header__Root>
+<div>
+  <header
+    class="Header__Root-sc-6ao3va-0 jLpvdO"
+  >
+    <nav
+      class="HeaderNavigation__Root-ixstj1-1 buTUPC"
+    >
+      <a
+        class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+      >
+        Home
+      </a>
+      <a
+        class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+      >
+        About
+      </a>
+      <a
+        class="HeaderNavigation__NavLink-ixstj1-0 bzKWdB A-sc-1g6vast-0 YkdzD"
+      >
+        Shop
+      </a>
+    </nav>
+  </header>
+</div>
 `;
