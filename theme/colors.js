@@ -60,3 +60,8 @@ export const COLOR_TYPOGRAPHY = '#2c3e50';
  */
 export const COLOR_BG = '#fafafa';
 export const COLOR_BG_DARK = '#161c27';
+
+/**
+ * Border color
+ */
+export const COLOR_BORDER = '#92b0b3';

@@ -4,6 +4,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ *
+ */
+import FileDropZone from '../Forms/FileDropZone';
+
 const CreateShopItem = ({ onSubmit }) => {
   const [state, setState] = useState({ title: '' });
 
@@ -19,9 +24,19 @@ const CreateShopItem = ({ onSubmit }) => {
     onSubmit({ variables: state });
   };
 
+  const handeFileChange = (acceptedFiles, rejectedFiles) => {
+    console.log(
+      'acceptedFiles: ',
+      acceptedFiles,
+      'rejectedFiles: ',
+      rejectedFiles,
+    );
+  };
+
   return (
     <form onSubmit={handeSubmit}>
       <h4>Create Shop Item</h4>
+      <FileDropZone onDrop={handeFileChange} />
       <input
         type="text"
         name="title"

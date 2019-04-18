@@ -1,3 +1,5 @@
+export const GUTTER = 8;
+
 export const XL = 1920;
 export const LG = 1280;
 export const MD = 960;
