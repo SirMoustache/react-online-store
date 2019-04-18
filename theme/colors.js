@@ -58,7 +58,7 @@ export const COLOR_TYPOGRAPHY = '#2c3e50';
 /**
  * Background color
  */
-export const COLOR_BG = '#fafafa';
+export const COLOR_BG_PENUMBRA = '#f5f5f5';
 export const COLOR_BG_DARK = '#161c27';
 
 /**
