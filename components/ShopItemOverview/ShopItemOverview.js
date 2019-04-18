@@ -3,12 +3,24 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+/**
+ * Theme
+ */
+import { SHADOW_DEFAULT } from '../../theme/shadows';
+
+const Root = styled.div`
+  padding: 16px;
+  margin: 16px;
+  box-shadow: ${SHADOW_DEFAULT};
+`;
 
 const ShopItemOverview = ({ title }) => (
-  <div>
+  <Root>
     <h3>Shop Item</h3>
     Title: {title}
-  </div>
+  </Root>
 );
 
 ShopItemOverview.propTypes = {

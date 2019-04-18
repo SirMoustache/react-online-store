@@ -1,7 +1,7 @@
 import withApollo from 'next-with-apollo';
 import ApolloClient from 'apollo-boost';
 
-export const ENDPOINT = `http://localhost:4444`;
+export const ENDPOINT = `http://localhost:8080`;
 
 function createClient({ headers }) {
   return new ApolloClient({

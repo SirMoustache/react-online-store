@@ -2,25 +2,32 @@
 
 exports[`<HomePage /> should match snapshot 1`] = `
 <div>
-  <h1>
-    Hello World from Home Page
-  </h1>
-  <form>
-    <h4>
-      Create Shop Item
-    </h4>
-    <input
-      name="title"
-      placeholder="Title"
-      type="text"
-      value=""
+  <div
+    class="Container-sc-1kdd3x2-0 kwPFyY"
+  >
+    <h1>
+      Hello World from Home Page
+    </h1>
+    <form>
+      <h4>
+        Create Shop Item
+      </h4>
+      <input
+        name="title"
+        placeholder="Title"
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Create
+      </button>
+    </form>
+    <hr />
+    <div
+      class="HomePage__ShopItemsList-sc-3wrzrk-0 gsXTOu"
     />
-    <button
-      type="submit"
-    >
-      Create
-    </button>
-  </form>
-  <hr />
+  </div>
 </div>
 `;
