@@ -2,7 +2,7 @@ import {
   COLOR_TYPOGRAPHY,
   COLOR_ACTION,
   COLOR_ACTION_DARK,
-  COLOR_BG,
+  COLOR_BG_PENUMBRA,
   COLOR_BG_DARK,
 } from './colors';
 
@@ -16,7 +16,7 @@ const colors = {
     main: COLOR_TYPOGRAPHY,
   },
   fill: {
-    light: COLOR_BG,
+    penumbra: COLOR_BG_PENUMBRA,
     dark: COLOR_BG_DARK,
   },
   active: {
