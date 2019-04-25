@@ -7,8 +7,16 @@ import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 
 export const CREATE_SHOP_ITEM_MUTATION = gql`
-  mutation CREATE_SHOP_ITEM_MUTATION($title: String!) {
-    createShopItem(title: $title) {
+  mutation CREATE_SHOP_ITEM_MUTATION(
+    $title: String!
+    $preview: String!
+    $largePreview: String!
+  ) {
+    createShopItem(
+      title: $title
+      preview: $preview
+      largePreview: $largePreview
+    ) {
       id
     }
   }

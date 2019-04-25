@@ -14,6 +14,7 @@ import { COLOR_BORDER } from '../../../theme/colors';
 
 const Root = styled.div`
   cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
+  opacity: ${({ disabled }) => (disabled ? 0.3 : 'initial')};
   outline: 2px dashed ${COLOR_BORDER};
   outline-offset: -${GUTTER}px;
   padding: ${GUTTER * 4}px;
