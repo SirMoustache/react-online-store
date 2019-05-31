@@ -2,7 +2,7 @@
  * Absolute imports
  */
 import React from 'react';
-import { render, cleanup } from 'react-testing-library';
+import { render, cleanup } from '@testing-library/react';
 import { MockedProvider } from 'react-apollo/test-utils';
 
 /**
