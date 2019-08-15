@@ -52,7 +52,7 @@
     "react-apollo": "^2.5.4",
     "react-dom": "^16.8.1",
     "react-dropzone": "^10.1.4",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "styled-components": "^4.2.1"
   }
 }
