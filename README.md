@@ -2,7 +2,7 @@
 
 ![travis-ci badge](https://travis-ci.com/SirMoustache/react-online-store.svg?branch=master)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/SirMoustache/react-online-store.svg)](https://greenkeeper.io/)
+
 
 ## How to run
 
