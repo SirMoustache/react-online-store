@@ -23,7 +23,7 @@
   "author": "SirMoustache",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.6.0",
     "babel-eslint": "^10.0.1",
     "express": "^4.17.1",
     "next": "^9.0.0",
